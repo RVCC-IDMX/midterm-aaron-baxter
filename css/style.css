@@ -1,13 +1,65 @@
+/* Body Section */
+
+body {
+    color: #92BCEA;
+    background-color: #36454F;
+    
+}
+
 /* Styles for Mobile Site */
 
 /* Header & Hero */
+header {
+    text-align: center;
+    font-family: "Merriweather";
+    font-size: 150%;
+}
+
+#hero img {
+width: 325px;
+}
 
 /* Projects */
+#projects {
+    text-align: center;
+    font-family: "Roboto";
+    border: 2px solid #FAF3DD;
+    margin-bottom: 2rem;
+
+}
+
+#projects img {
+    max-width: 325px;
+}
+
+#projects figcaption {
+    padding-top: .5rem;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Reviews */
+#reviews{
+    font-family: "Roboto";
+
+}
+
+
 
 /* Footer */
-
+footer {
+    text-align: center;
+    font-family: "Merriweather";
+    border: 5px solid #FAF3DD;
+    padding: 10px;
+    width: 685px;
+    margin: 0 auto;
+    font-size: 24px;
+}
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
@@ -15,6 +67,13 @@
     /* Header & Hero */
 
     /* Projects */
+    #projects {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #projects h2 {
+        grid-column: 1 / -1;
+    }
 
     /* Reviews */
 
