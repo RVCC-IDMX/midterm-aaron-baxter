@@ -226,16 +226,13 @@ footer {
 
     #contact form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
+        justify-items:center;
     }
 
-    #contact label {
-        grid-column: span 2;
-    }
 
     #contact input, #contact textarea {
-        grid-column: span 2;
         padding: 0.5rem;
         border: 1px solid #FAF3DD;
         background-color: #36454F;
@@ -244,7 +241,6 @@ footer {
     }
 
     #contact button {
-        grid-column: span 2;
         width: auto;
         margin: 1rem auto 0;
     }
