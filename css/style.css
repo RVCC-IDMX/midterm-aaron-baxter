@@ -3,80 +3,261 @@
 body {
     color: #92BCEA;
     background-color: #36454F;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0; 
     
 }
 
 /* Styles for Mobile Site */
 
 /* Header & Hero */
+
 header {
     text-align: center;
-    font-family: "Merriweather";
-    font-size: 150%;
+    font-family: "Merriweather", serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+
+}
+
+#hero {
+    margin: 1rem 0;
 }
 
 #hero img {
-width: 325px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 8px;
 }
 
 /* Projects */
+
 #projects {
     text-align: center;
-    font-family: "Roboto";
     border: 2px solid #FAF3DD;
-    margin-bottom: 2rem;
-
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
-#projects img {
-    max-width: 325px;
+#projects h2 {
+    font-size: 1.75rem;
+    color: #92BCEA;
+    margin-bottom: 1rem;
+}
+
+.project {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #FAF3DD;
+    border-radius: 8px;
+    background-color: #36454F;
+}
+
+.project img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
 }
 
 #projects figcaption {
     padding-top: .5rem;
+    font-size: 0.9rem;
+    color: #92BCEA;
+
 }
 
-#projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* Reviews */
 #reviews{
-    font-family: "Roboto";
-
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-top: 2px solid #FAF3DD;
 }
 
+#reviews h2 {
+    font-size: 1.75rem;
+    color: #92BCEA;
+    margin-bottom: 1rem;
+}
+
+
+.review {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #FAF3DD;
+    border-radius: 8px;
+    background-color: #36454F;
+    color: #92BCEA;
+}
 
 
 /* Footer */
 footer {
     text-align: center;
-    font-family: "Merriweather";
-    border: 5px solid #FAF3DD;
-    padding: 10px;
-    width: 685px;
-    margin: 0 auto;
-    font-size: 24px;
+    font-family: "Merriweather", serif;
+    padding: 1rem;
+    background-color: #36454F;
+    color: #92BCEA;
+    font-size: 1rem;
+    border-top: 2px solid #FAF3DD;
 }
+
+/* Contact Section */
+
+#contact {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #36454F;
+    border: 2px solid #FAF3DD;
+    border-radius: 8px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#contact input, #contact textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #FAF3DD;
+    background-color: #36454F;
+    color: #FAF3DD;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 0.7rem 1.5rem;
+    color: #92BCEA;
+    background-color: #FAF3DD;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
 
     /* Header & Hero */
 
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #hero img {
+        width: 500px;
+    }
+    
     /* Projects */
+
     #projects {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
     }
+
     #projects h2 {
         grid-column: 1 / -1;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #projects .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid #FAF3DD;
+        border-radius: 5px;
+    }
+
+    #projects img {
+        max-width: 100%;
     }
 
     /* Reviews */
 
+    #reviews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #reviews h2 {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .review {
+        border: 1px solid #FAF3DD;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: #36454F;
+    }
+
+    /* Contact */
+
+    #contact {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background-color: #36454F;
+        border: 1px solid #FAF3DD;
+        border-radius: 5px;
+    }
+
+    #contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #contact label {
+        grid-column: span 2;
+    }
+
+    #contact input, #contact textarea {
+        grid-column: span 2;
+        padding: 0.5rem;
+        border: 1px solid #FAF3DD;
+        background-color: #36454F;
+        color: #92BCEA;
+        text-align: center
+    }
+
+    #contact button {
+        grid-column: span 2;
+        width: auto;
+        margin: 1rem auto 0;
+    }
+
     /* Footer */
+
+    footer {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+        background-color: #36454F;
+        color: #92BCEA;
+        border-top: 5px solid #FAF3DD;
+    }
 
 }

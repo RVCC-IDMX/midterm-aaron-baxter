@@ -11,3 +11,5 @@ Put your images in:
 Put your code in:
 
 > index.html
+
+The logo for the web page is an AI-generated image.

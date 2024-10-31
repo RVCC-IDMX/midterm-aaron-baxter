@@ -60,6 +60,7 @@
     <!-- List of Reviews -->
     <section id="reviews">
         <h2>Reviews</h2>
+
         <div class="review">
             <div class="name">
                 <p>
@@ -77,35 +78,68 @@
                 </p>
             </div>
 
-            <br>
-
             <div class="content">
                 <p>
-                    They did an excellent job repairing old pipework, installing newer AI toliets, and unclogging any drains that were issues!!!
+                    They did an excellent job repairing old pipework, installing newer AI toliets, and unclogging any drains that were causing us issues!!!
                 </p>
             </div>
         </div>
         <div class="review">
             <div class="name">
                 <p>
-                    Robert Gnolmes
+                    Robert Gnomes 
                 </p>
             </div>
             <div class="title">
                 <p>
-                    
+                    Local Business Owner
                 </p>
             </div>
-            <div class="rating"></div>
-            <div class="content"></div>
+            <div class="rating">
+                4.5 Stars
+            </div>
+            <div class="content">
+                <p>Impressive service! The team was efficient and solved my plumbing issues with great attention to detail. Highly recommend for any business needing quick repairs.</p>
+            </div>
         </div>
         <div class="review">
-            <div class="name"></div>
-            <div class="title"></div>
-            <div class="rating"></div>
-            <div class="content"></div>
+            <div class="name">
+                <p>
+                    Jane Doe
+                </p>
+            </div>
+            <div class="title">
+                <p>
+                    Homeowner
+                </p>
+            </div>
+            <div class="rating">
+                <p>
+                    4 Stars
+                </p>
+            </div>
+            <div class="content">
+                <p>
+                    Great service with timely response! Fixed my drainage issues with ease.
+                </p>
+            </div>
         </div>
     </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
 
 </main>
 <footer>
